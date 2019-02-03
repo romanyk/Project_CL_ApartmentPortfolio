@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import MainCarousel from '../main-carousel';
 import CardView from '../card-view';
-
+import './header.css'
 
 export default class Header extends Component {
 
@@ -9,8 +9,8 @@ export default class Header extends Component {
         return (
 
             <Fragment>
-                <nav id="navbar-example2" className="navbar navbar-light bg-light" >
-                    <a className="navbar-brand" href="#">Welcome Home</a>
+                <nav id="navbar-example2" className="navbar navbar-light fixed-top" style={{backgroundColor: "rgb(0,0,0,0.7)" }} >
+                    <a className="navbar-brand" style={{color: "#fff"}} href="#">Welcome Home</a>
                     <ul className="nav nav-pills">
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Apartments</a>

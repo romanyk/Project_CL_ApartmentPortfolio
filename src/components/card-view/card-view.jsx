@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './card-view.css'
 
 export default class CardView extends Component {
 
@@ -24,7 +24,7 @@ export default class CardView extends Component {
                         return (
                             <div className={"col block" + (1 + parseInt(value)) + " card border-secondary "} style={{ margin: 10, minWidth: 150 }} key={value}>
                                 <div className="card" className="width: 18rem;">
-                                    <img src={imageUrl[value]} className="card-img-top " style={{ width: "90%", margin: 15 }} alt="..." />
+                                    <img src={imageUrl[value]} className="card-img-top " style={{ margin: 15, }} alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{city[value]}</h5>
                                         <p className="card-text">{description[value]}</p>

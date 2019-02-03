@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../header';
 import MainCarousel from '../main-carousel';
-import ImageAvatars from '../reviews';
-import Reviews from '../reviews/testimony';
+import Reviews from '../reviews';
 import CardView from '../card-view';
 import AirbnbAPI from '../../service/airbnb';
 
@@ -21,7 +20,8 @@ export default class App extends Component {
         return (
             <div>
 
-                <Header pastReviews={<Reviews reviewData={this.state} />} />
+                <Header pastReviews={<Reviews reviewData={this.state}  />} />
+
 
 
 

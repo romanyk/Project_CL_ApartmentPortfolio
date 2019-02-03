@@ -1,0 +1,11 @@
+
+img.card-img-top {
+    width: 80%;
+    height: 80%;
+}
+
+img.card-img-top:hover {
+ width: 90%;
+ height: 90%;
+ 
+}

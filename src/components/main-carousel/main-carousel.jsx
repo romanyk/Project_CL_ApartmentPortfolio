@@ -3,7 +3,7 @@ import React from "react";
 
 const MainCarousel = () => {
     return (
-        <div id="carouselExampleIndicatorsheader" className="carousel slide" data-ride="carousel" >
+        <div id="carouselExampleIndicatorsheader" className="carousel slide"  data-ride="carousel" >
             <ol className="carousel-indicators">
                 <li data-target="#carouselExampleIndicatorsheader" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleIndicatorsheader" data-slide-to="1"></li>
@@ -13,7 +13,7 @@ const MainCarousel = () => {
                 <div className="carousel-item active">
                     <img src="https://a0.muscache.com/im/pictures/99a2e677-92b3-45b0-b435-549b162a3c15.jpg" className="d-block w-100" alt="Modern Bathroom" />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" >
                     <img src="https://a0.muscache.com/im/pictures/9c278093-b47b-4b1c-975b-df05cfb70c60.jpg" className="d-block w-100" alt="Stylish Dining Room" />
                 </div>
                 <div className="carousel-item">
