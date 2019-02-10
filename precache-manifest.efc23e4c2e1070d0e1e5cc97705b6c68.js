@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/Project_CL_ApartmentPortfolio/static/media/Plan.68b624e3.jpg"
   },
   {
-    "revision": "972b526e9c691cb2637e",
-    "url": "/Project_CL_ApartmentPortfolio/static/css/main.c3d3ffac.chunk.css"
+    "revision": "ae5247a87f1bfbf963b3",
+    "url": "/Project_CL_ApartmentPortfolio/static/css/main.4942958d.chunk.css"
   },
   {
     "revision": "9a32ed9d3f617cd2c0db7e80c9ae4538",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/Project_CL_ApartmentPortfolio/static/media/8.43f671fe.jpg"
   },
   {
-    "revision": "972b526e9c691cb2637e",
-    "url": "/Project_CL_ApartmentPortfolio/static/js/main.972b526e.chunk.js"
+    "revision": "ae5247a87f1bfbf963b3",
+    "url": "/Project_CL_ApartmentPortfolio/static/js/main.ae5247a8.chunk.js"
   },
   {
     "revision": "66683ded5071b2613999d77d6256989c",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/Project_CL_ApartmentPortfolio/static/css/1.6c4c4d8e.chunk.css"
   },
   {
-    "revision": "cf0f91809af0a7270e88d429c2450460",
+    "revision": "5954c65a7c11a1babf1c4b3c0eb85486",
     "url": "/Project_CL_ApartmentPortfolio/index.html"
   }
 ];
