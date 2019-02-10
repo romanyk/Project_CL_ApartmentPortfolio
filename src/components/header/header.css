@@ -1,5 +1,8 @@
-.nav-link {
-    color: #fff;
+nav.navbar.navbar-light.fixed-top {
+    background-color: rgba(0, 0,0,0.7)
 }
 
-
+.nav-link:hover{
+    color: #fff;
+    background-color: #007bff;
+}

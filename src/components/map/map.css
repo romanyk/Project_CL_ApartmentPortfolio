@@ -1,0 +1,9 @@
+div.maps{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+i.fas.fa-map-marker-alt{
+    font-size: 40px;
+    color: darkred;
+}

@@ -1,4 +1,3 @@
-
-import Reviews from './testimony';
+import Reviews from './review';
 
 export default Reviews;

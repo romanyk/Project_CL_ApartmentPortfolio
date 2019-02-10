@@ -1,11 +1,249 @@
-
-img.card-img-top {
-    width: 80%;
-    height: 80%;
+img.card-img-top{
+    width: 90%;
+    margin: 15px;
 }
 
 img.card-img-top:hover {
- width: 90%;
- height: 90%;
- 
+    /* transform: scale(1.05) !important; */
+    /* transition: -ms-transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, -webkit-transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s !important; */
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+  }
+
+section.card-view{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+p.subs {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 300;
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.intro h2 {
+    color: #B2ACA1;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    border-top: 4px solid #494949;
+}
+
+p.card-text{
+   border-top: 1px solid #000;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .col:hover .card-img-top {
+    opacity: 0.7;
+    border:  -2px solid #fff;
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  .col:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    position: relative;
+    text-align: center;
+    padding-bottom:20px;
+  }
+
+
+  .categoryWrapper:after{
+	position: absolute;
+	top:0;
+	left: 0;
+	right:0;
+	bottom: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
+background: #a29ca9; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	content: '';
+	opacity: 0;
+		-webkit-transition: opacity 0.9s ease 0s;
+}
+
+.categoryWrapper:hover:after{
+	opacity: 0.4;
+}
+
+.categoryWrapper h1{
+	color:white;
+	font-size: 50px;
+	letter-spacing: 2px;
+	-webkit-transition: all 0.15s ease 0s;
+	position: relative;
+	z-index: 10;
+}
+
+.categoryWrapper:hover h1{
+	transform: translateY(-10px);
+}
+
+.categoryWrapper button{
+	position: absolute;
+	transform: translatey(60px);
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	color:white;
+	width: 250px;
+	height:50px;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	z-index: 10;
+}
+
+.categoryWrapper button span{
+	display: block;
+	position: relative;
+	line-height: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.categoryWrapper button > span:after{
+	content:'';
+	position: absolute;
+	top:0;
+	left: 50%;
+	width: 20px;
+	height: 0;
+	border: 1px solid white;
+	border-left: none;
+	border-bottom: none;
+	    transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper:hover button > span:after{
+	width: calc(50% - 1px);
+	height: calc(100% - 2px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper button > span:before{
+	content:'';
+	position: absolute;
+	top:0;
+	right: 50%;
+	width: 20px;
+	height: 0;
+
+	border: 1px solid white;
+	border-right: none;
+	border-bottom: none;
+
+	    transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper:hover button > span:before{
+	width: calc(50% - 1px);
+	height: calc(100% - 2px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper button > span > span:before{
+	content:'';
+	position: absolute;
+	bottom:0;
+	right: 0%;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+
+}
+
+.categoryWrapper:hover button > span > span:before{
+	opacity: 1;
+	border-bottom: 1px solid white;
+	width: calc(50%);
+	height: 1px;
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.categoryWrapper button > span > span:after{
+	content:'';
+	position: absolute;
+	bottom:0;
+	left: 0%;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+
+}
+
+.categoryWrapper:hover button > span > span:after{
+	opacity: 1;
+	border-bottom: 1px solid white;
+	width: calc(50%);
+	height: 1px;
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.categoryWrapper button > span > span > span{
+	transition: color 0.15s ease-out 0.3s;
+	color: transparent;
+}
+
+.categoryWrapper:hover button > span > span > span{
+	color:white;
+}
+
+.categoryWrapper button > span > span > span:after{
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	color:#1f2e4d;
+	content: attr(data-attr-span);
+	width: 0%;
+	height: 100%;
+	background:white;
+	white-space: nowrap;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	transition: width 0.2s;
+}
+
+.categoryWrapper button:hover > span > span > span:after{
+	width: 100%;
 }

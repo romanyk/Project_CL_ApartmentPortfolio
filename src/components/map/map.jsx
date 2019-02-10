@@ -1,35 +1,46 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import './map.css';
 
-class SimpleMap extends Component {
-    static defaultProps = {
-        center: {
-            lat: 59.95,
-            lng: 30.33
-        },
-        zoom: 11
-    };
-
-    render() {
-        return (
-            // Important! Always set the container height explicitly
-            <div style={{ height: '100vh', width: '100%' }}>
-                <GoogleMapReact
-                // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
-                // defaultCenter={this.props.center}
-                // defaultZoom={this.props.zoom}
-                >
-                    <AnyReactComponent
-                        lat={59.955413}
-                        lng={30.337844}
-                        text={'Kreyser Avrora'}
-                    />
-                </GoogleMapReact>
-            </div>
-        );
-    }
+const AnyReactComponent = () => {
+  return <i className="fas fa-map-marker-alt"></i>
 }
 
-export default SimpleMap;
+class GoogleApiWrapper extends Component {
+  state = {
+    krk: {
+      lat: 50.089001,
+      lng: 19.979553
+    },
+    wro: {
+      lat: 51.091599,
+      lng: 17.046081
+    },
+    zoom: 16
+
+  }
+  render() {
+    const { city } = this.props
+    const location = (city === "wro") ? this.state.wro : this.state.krk
+    return (
+
+      <div className="maps">
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "AIzaSyDhVbUxuK9ix-HkqDpypN218lj4W1q8AL0" }}
+          defaultCenter={location}
+          defaultZoom={this.state.zoom}
+
+        >
+          <AnyReactComponent
+            lat={location.lat}
+            lng={location.lng}
+            text={"text"}
+          />
+        </GoogleMapReact>
+      </div>
+    );
+  }
+}
+
+export default GoogleApiWrapper;

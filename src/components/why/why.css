@@ -1,0 +1,23 @@
+h5.why{
+    text-align: center;
+    color: #000;
+    font-family: "Comfortaa",sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: none;
+    font-size: 30px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    padding-top: 50px;
+    padding-bottom:20px;
+}
+
+div.why{
+    padding-top: 50px;
+}
+
+
+div.card.border-secondary{
+    margin: 20px;
+    min-width: 150px;
+}
