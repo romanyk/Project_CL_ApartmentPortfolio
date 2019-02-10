@@ -39,7 +39,7 @@ export default class Contact extends Component {
                                 We speak English, Polish, Russian and Ukranian languages and we'll be happy to help you with accomodation in Krakow or Warsaw </p>
 
 
-                            <form action="mailto:300u250w@gmail.com" method="POST" enctype="text/plain" name="EmailTestForm">
+                            <form action="mailto:300u250w@gmail.com" method="POST" encType="text/plain" name="EmailTestForm">
                                 <div className="form-row">
                                     <div className="col-md-6 mb-4">
                                         <input type="text" className="form-control" placeholder="First name" required />
@@ -72,7 +72,7 @@ export default class Contact extends Component {
                                     <small id="emailHelp" className="form-text text-muted">We never share your email or phone number with anyone else.</small>
 
                                 </div>
-                                <div class="mb-3">
+                                <div className="mb-3">
                                     <textarea
                                         className="form-control"
                                         id="validationTextarea"
