@@ -3,13 +3,30 @@ import { Container, Row, Col } from 'react-grid-system';
 import "./ameneties.css"
 
 export default class Ameneties extends Component {
+    
+    state = {
+        krk: {
+            title: "Loft Style apartment next to Quattro",
+            people:4,
+            size:46},
+        wro: {
+            title:"Beautiful Studio Apartment",
+            people:3,
+            size:34}
+    }
+
+
 
     render() {
+
+        const city = (this.props.city === "wro") ? this.state.wro : this.state.krk
+
         return (
+            
             <Container className="ameneties">
                 <Row>
                     <Col>
-                        <h1>Loft Style apartment next to Quattro</h1>
+                        <h1>{city.title}</h1>
                     </Col>
 
                 </Row>
@@ -29,7 +46,7 @@ export default class Ameneties extends Component {
                                 d="M14.5 7C16 7 17 6 17 4.5S16 2 14.5 2a2.5 2.5 0 0 0 0 5zM7 6c1.7 0 3-1.3 3-3S8.7 0 7 0 4 1.3 4 3s1.3 3 3 3zm7.5 3C12.7 9 9 10 9 11.8V14h11v-2.3C20 10 16.3 9 14.5 9zM7 8c-2.3 0-7 1.2-7 3.5V14h7v-2.3c0-.8.3-2.3 2.4-3.4L7 8z"></path>
                         </svg>
                         <div className="title">
-                            4 people
+                            {city.people} people
                         </div>
 
                     </Col>
@@ -85,7 +102,7 @@ export default class Ameneties extends Component {
                         </svg>
 
                         <div className="title">
-                            46 m<sup>2</sup>
+                            {city.size}m<sup>2</sup>
                         </div>
 
                     </Col>

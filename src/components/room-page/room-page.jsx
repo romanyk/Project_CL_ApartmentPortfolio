@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './room-page.css';
 import Galery from './galery';
 import Ameneties from './ameneties';
@@ -17,7 +17,6 @@ export default class RoomPage extends Component {
 
 
         return (
-            <Fragment >
                 <div id={city}>
                     <Ameneties city={city} />
                     <Description city={city} />
@@ -25,12 +24,6 @@ export default class RoomPage extends Component {
                     <Galery city={city} />
                     <GoogleApiWrapper city={city} />
                 </div>
-
-            </Fragment>
-
-
-
-
         )
     }
 }

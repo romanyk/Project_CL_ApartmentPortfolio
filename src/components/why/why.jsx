@@ -20,7 +20,7 @@ export default class Why extends Component {
                 </Row>
                 <Row>
                     <Col md={12}>
-                        <h5 className="why"> Our apartment is fully equipped</h5>
+                        <h5 className="why"> Our apartments are fully equipped</h5>
                     </Col>
 
                 </Row>

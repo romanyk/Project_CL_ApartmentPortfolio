@@ -27,7 +27,7 @@ class GoogleApiWrapper extends Component {
 
       <div className="maps">
         <GoogleMapReact
-          // bootstrapURLKeys={{ key: "AIzaSyDhVbUxuK9ix-HkqDpypN218lj4W1q8AL0" }}
+          bootstrapURLKeys={{ key: "AIzaSyDhVbUxuK9ix-HkqDpypN218lj4W1q8AL0" }}
           defaultCenter={location}
           defaultZoom={this.state.zoom}
 
