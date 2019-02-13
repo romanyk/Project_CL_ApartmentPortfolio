@@ -32,15 +32,15 @@ export default class Reviews extends Component {
                                             index = index + counter;
                                             return (
                                                 <div className={"col block" + index + 1} key={idx + index}>
-                                                    <div className="card" style={{ backgroundColor: "transparent", borderColor: "transparent" }}>
+                                                    <div className="card border-0">
                                                         <a href={url[index]}>
-                                                            <img src={icon[index]} alt={name[index]} className="rounded-circle mx-auto d-block img-fluid img-thumbnail" style={{ maxWidth: 150 }} />
+                                                            <img src={icon[index]} alt={name[index]} className="rounded-circle mx-auto d-block img-fluid img-thumbnail cardview" />
                                                         </a>
                                                         <h4 className="card-title mx-auto d-block">{name[index]}</h4>
-                                                        <h6 className="blue-text font-weight-bold mx-auto d-block" style={{ color: "#2196f3" }}>{date[index]}</h6>
+                                                        <h6 className="blue-text font-weight-bold mx-auto d-block cardview">{date[index]}</h6>
                                                         <p>
                                                             <i className="fa fa-quote-left" ></i> {review[index]}</p>
-                                                        <div className="mx-auto d-block" style={{ color: "gold" }}>
+                                                        <div className="mx-auto d-block cardview">
                                                             <i className="fa fa-star"> </i>
                                                             <i className="fa fa-star"> </i>
                                                             <i className="fa fa-star"> </i>

@@ -33,13 +33,12 @@ export default class Ameneties extends Component {
                 <Row className="div">
 
                     <Col xs={2.3} sm={2} >
-                        <svg
+                        <svg className= "ameneties"
                             xmlns="http://www.w3.org/2000/svg"
-                            style={{
-                                width: 20,
-                                height: 14,
-                                viewBox: "0 0 20 14"
-                            }}>
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            >
                             <path
                                 fillOpacity=".8"
                                 fillRule="evenodd"
@@ -56,11 +55,7 @@ export default class Ameneties extends Component {
                             width="18"
                             height="20"
                             viewBox="0 0 18 20"
-                            style={{
-                                width: 18,
-                                height: 20,
-                                viewBox: "0 0 18 20"
-                            }}>
+                            >
                             <path
                                 fillOpacity=".8"
                                 d="M8 0v2c-2.5.5-4.6 2.5-5 5h12c-.4-2.5-2.5-4.5-5-5V0H8zM2 8v2h14V8H2zm3 4c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zM3 15c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zM1 18c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1zm4 0c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1z"></path>
@@ -76,10 +71,7 @@ export default class Ameneties extends Component {
                             width="20"
                             height="16"
                             viewBox="0 0 20 16"
-                            style={{
-                                width: 20,
-                                height: 16
-                            }}>
+                            >
                             <path
                                 fillOpacity=".8"
                                 d="M2 0C1 0 0 1 0 2v11h20V2c0-1-1-2-2-2H2zm2 2h3c1 0 2 1 2 2v2H2V4c0-1 1-2 2-2zm9 0h3c1 0 2 1 2 2v2h-7V4c0-1 1-2 2-2zM0 14v2h3v-2H0zm17 0v2h3v-2h-3z"></path>

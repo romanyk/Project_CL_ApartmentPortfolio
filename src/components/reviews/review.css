@@ -4,11 +4,8 @@
 } */
 
 section.review{
-
     border-top: 2px solid #494949;
     padding-top: 20px;
-
-
 }
 
 div.carousel.slide{
@@ -24,3 +21,16 @@ h2.review{
     text-align: center;
     color: rgb(33, 150, 243);
 }
+
+ img.cardview {
+     max-width: 150px;
+ }
+
+ h6.cardview {
+     color: #2196f3;
+     text-align: center;
+ }
+
+ div.cardview {
+     color: gold;
+ }

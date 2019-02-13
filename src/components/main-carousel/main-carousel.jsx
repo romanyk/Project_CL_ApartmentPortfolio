@@ -5,11 +5,9 @@ const MainCarousel = () => {
     return (
         <div
             id="carouselExampleIndicatorsheader"
-            className="carousel slide"
+            className="carousel slide py-0"
             data-ride="carousel"
-            style={{
-                paddingTop: 0
-            }}>
+            >
             <ol className="carousel-indicators">
                 <li
                     data-target="#carouselExampleIndicatorsheader"
